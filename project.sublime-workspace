@@ -1,0 +1,1003 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getBasicPosition()\tVector3"
+			],
+			[
+				"has",
+				"hasJewelry()\tbool"
+			],
+			[
+				"B",
+				"Blueprint\tBlueprint"
+			],
+			[
+				"game",
+				"gameObject\tGameObject { get; }"
+			],
+			[
+				"ve",
+				"Vector3\tVector3"
+			],
+			[
+				"find",
+				"findPosition()\tVector3"
+			],
+			[
+				"getre",
+				"getResourceDepth()\tfloat"
+			],
+			[
+				"p",
+				"protected\tprotected"
+			],
+			[
+				"reso",
+				"resource\tGameObject"
+			],
+			[
+				"is",
+				"isJewelry\tbool"
+			],
+			[
+				"b",
+				"Blueprint\tBlueprint"
+			],
+			[
+				"gam",
+				"gameObject\tGameObject { get; }"
+			],
+			[
+				"for",
+				"foreach\tforeach"
+			],
+			[
+				"Ray",
+				"Ray\tRay"
+			],
+			[
+				"bu",
+				"ButtonUI\tButtonUI"
+			],
+			[
+				"sti",
+				"string\tstring"
+			],
+			[
+				"st",
+				"string\tstring"
+			],
+			[
+				"ob",
+				"obj\tGameObject"
+			],
+			[
+				"obj",
+				"obj\tGameObject"
+			],
+			[
+				"object",
+				"objectButton\tGameObject[]"
+			],
+			[
+				"o",
+				"objectRadioButton\tGameObject"
+			],
+			[
+				"ga",
+				"gameObject\tGameObject { get; }"
+			],
+			[
+				"sta",
+				"state\tbool"
+			],
+			[
+				"gae",
+				"GameObject\tGameObject"
+			],
+			[
+				"re",
+				"return\treturn"
+			],
+			[
+				"Ra",
+				"Random\tRandom"
+			],
+			[
+				"resou",
+				"resourcesStatum\tGameObject[]"
+			],
+			[
+				"generate",
+				"generateJewelry_sizeS()\tvoid"
+			],
+			[
+				"genera",
+				"generateJewelry_sizeL()\tvoid"
+			],
+			[
+				"ge",
+				"generateStone()\tvoid"
+			],
+			[
+				"findpo",
+				"findPosition(string tag, int lhs, int rhs, Vector2 position)\tVector3"
+			],
+			[
+				"fi",
+				"find_gameobject\tfind_gameobject"
+			],
+			[
+				"generateJe",
+				"generateJewelry_sizeM()\tvoid"
+			],
+			[
+				"item",
+				"itemSender\titemStock"
+			],
+			[
+				"obje",
+				"objectItemManager\tGameObject"
+			],
+			[
+				"tool",
+				"toolBomb\ttoolBomb"
+			],
+			[
+				"obe",
+				"objectParent\tGameObject"
+			],
+			[
+				"pe",
+				"parent\tTransform { get; set; }"
+			],
+			[
+				"too",
+				"toolBomb\ttoolBomb"
+			],
+			[
+				"c",
+				"collider\tComponent { get; }"
+			],
+			[
+				"gene",
+				"Generator_main\tGameObject[]"
+			],
+			[
+				"randm",
+				"Random\tRandom"
+			],
+			[
+				"Ve",
+				"Vector3\tVector3"
+			],
+			[
+				"ca",
+				"canActive\tbool"
+			],
+			[
+				"i",
+				"i\tint"
+			],
+			[
+				"sate",
+				"stateGauge\ttoolGauge"
+			],
+			[
+				"y",
+				"y\tfloat"
+			],
+			[
+				"f",
+				"frameCount\tint { get; }"
+			],
+			[
+				"ti",
+				"Time\tTime"
+			],
+			[
+				"Vec",
+				"Vector3()\tVector3()"
+			],
+			[
+				"loca",
+				"localScale\tVector3 { get; set; }"
+			],
+			[
+				"t",
+				"transform\tTransform { get; }"
+			],
+			[
+				"lo",
+				"localScale\tVector3 { get; set; }"
+			],
+			[
+				"anim",
+				"animSmoke\tanimSmoke"
+			],
+			[
+				"Instantiate",
+				"Instantiate(Object original, Vector3 position, Quaternion rotation)\tObject"
+			],
+			[
+				"tr",
+				"true\ttrue"
+			],
+			[
+				"isd",
+				"isDorill\tbool"
+			],
+			[
+				"lhs",
+				"lhs\tint"
+			],
+			[
+				"sou",
+				"soundActive\tsoundActive"
+			],
+			[
+				"set",
+				"settingArray(GameObject[] obj)\tvoid"
+			],
+			[
+				"d",
+				"d_ff\tGameObject"
+			],
+			[
+				"fo",
+				"foreach\tforeach"
+			],
+			[
+				"Null",
+				"NullReferenceException\tNullReferenceException"
+			],
+			[
+				"sound",
+				"soundJewelry\tGameObject"
+			],
+			[
+				"play",
+				"playJewelry\tAudioSource"
+			],
+			[
+				"Au",
+				"AudioSource\tAudioSource"
+			],
+			[
+				"reset",
+				"resetter\tGameObject[]"
+			],
+			[
+				"In",
+				"Instantiate(Object original)\tObject"
+			],
+			[
+				"ray",
+				"rayJewelry()\tvoid"
+			],
+			[
+				"hit",
+				"hitPoint\thitPoint"
+			],
+			[
+				"ra",
+				"Ray()\tRay()"
+			],
+			[
+				"soun",
+				"soundStone\tGameObject"
+			],
+			[
+				"s",
+				"setActive(string tag)\tvoid"
+			],
+			[
+				"pla",
+				"playSand\tAudioSource"
+			],
+			[
+				"Play",
+				"PlayOneShot(AudioClip clip)\tvoid"
+			],
+			[
+				"audio",
+				"AudioClip\tAudioClip"
+			],
+			[
+				"au",
+				"AudioSource\tAudioSource"
+			],
+			[
+				"Collisio",
+				"Collision2D\tCollision2D"
+			],
+			[
+				"de",
+				"Debug\tDebug"
+			],
+			[
+				"tag",
+				"tag\tstring { get; set; }"
+			],
+			[
+				"Pi",
+				"PickaxeUI\tisPickaxeUI"
+			],
+			[
+				"unity",
+				"UnityEngine\tUnityEngine"
+			],
+			[
+				"rayca",
+				"RaycastHit2D\tRaycastHit2D"
+			],
+			[
+				"log",
+				"Log(object message)\tvoid"
+			],
+			[
+				"Phy",
+				"Physics2D\tPhysics2D"
+			],
+			[
+				"Raycast",
+				"RaycastHit2D\tRaycastHit2D"
+			],
+			[
+				"came",
+				"Camera\tCamera"
+			],
+			[
+				"C",
+				"Collision2D\tCollision2D"
+			],
+			[
+				"Coll",
+				"Collision2D\tCollision2D"
+			],
+			[
+				"in",
+				"identity\tQuaternion { get; }"
+			],
+			[
+				"Hu",
+				"HummerController\tHummerController"
+			],
+			[
+				"mouse",
+				"mouse_position\tVector2"
+			],
+			[
+				"Colli",
+				"Collider2D\tCollider2D"
+			],
+			[
+				"Co",
+				"Collision2D\tCollision2D"
+			],
+			[
+				"instati",
+				"Instantiate(Object original)\tObject"
+			],
+			[
+				"De",
+				"Debug\tDebug"
+			],
+			[
+				"setr",
+				"SetTrigger(string name)\tvoid"
+			],
+			[
+				"getmouse",
+				"GetMouseButtonDown(int button)\tbool"
+			],
+			[
+				"SetTex",
+				"SetTextureOffset(string propertyName, Vector2 offset)\tvoid"
+			],
+			[
+				"Destroy",
+				"Destroy(Object obj)\tvoid"
+			],
+			[
+				"gameObject",
+				"GameObject\tGameObject"
+			],
+			[
+				"shot",
+				"shotDelay\tfloat"
+			],
+			[
+				"Getchi",
+				"GetChildCount()\tint"
+			],
+			[
+				"IE",
+				"IEnumerator\tIEnumerator"
+			],
+			[
+				"Getc",
+				"GetComponent<T>()\tT"
+			],
+			[
+				"Spa",
+				"Spaceship\tSpaceship"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Assets/Script/GenerateManager.cs",
+			"settings":
+			{
+				"buffer_size": 901,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/ItemGenerator.cs",
+			"settings":
+			{
+				"buffer_size": 858,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/Blueprint.cs",
+			"settings":
+			{
+				"buffer_size": 748,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "using UnityEngine;\nusing System.Collections;\n\npublic class StatumGenerator : Blueprint {\n\n\t// Use this for initialization\n\tvoid Start () {\n        startGenerate(hasRandom());\n\t}\n\n    private void startGenerate(bool trigger){\n        if(trigger){\n            generateRandom(getResource(), getBasicPosition());\n        }else{\n            generateGeneral(getResource(), getBasicPosition());\n        }\n\n    }\n\n    private void generateRandom(GameObject obj, Vector3 position){\n\n    }\n\n    private void generateGeneral(GameObject obj, Vector3 position){\n\n    }\n\n    private void loopMan(){\n        for(rhs){\n\n        }\n    }\n\n}\n",
+			"file": "Assets/Script/StatumGenerator.cs",
+			"file_size": 562,
+			"file_write_time": 131324010083898317,
+			"settings":
+			{
+				"buffer_size": 623,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/Hitpoint.cs",
+			"settings":
+			{
+				"buffer_size": 1377,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 140.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 410.0
+	},
+	"console":
+	{
+		"height": 763.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0';pf = 'Package Control.sublime-package';ipp = sublime.installed_packages_path();urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(' ', '%20')).read();dh = hashlib.sha256(by).hexdigest();print( 'Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0';pf = 'Package Control.sublime-package';ipp = sublime.installed_packages_path();urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(' ', '%20')).read();dh = hashlib.sha256(by).hexdigest();print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(' ', '%20')).read();",
+			"urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );",
+			"ipp = sublime.installed_packages_path();",
+			"pf = 'Package Control.sublime-package';",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0';",
+			"import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)",
+			"import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)",
+			"print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest();",
+			"urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );",
+			"pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path();",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88';",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"os",
+			"import urllib.request",
+			"import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)",
+			"import urllib.request,os,hashlib; h = "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Unity/Lab_2D Dig game",
+		"/C/Unity/Lab_2D Dig game/Assets",
+		"/C/Unity/Lab_2D Dig game/Assets/Script",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_Canvas",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/gauge",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/item",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI"
+	],
+	"file_history":
+	[
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/ToolBomb.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/StatumGenerator.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/ItemGenerator.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Blueprint.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/ToolPickaxe.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/GenerateManager.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/StartUp.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/BlueSheet.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/JewelryBlueSheet.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/ButtonUI.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/RadioButtonUI.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/BombUIManager.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/ToolActive.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/ToolUIManager.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/SwitchingUIManager.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/isTimer.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/ResultScore.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/item/ItemStock.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/ToolDorill.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/ToolHammer.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/isBombUI.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/ToolsUIManager.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/setParent.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Hitpoint.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/FindJewely.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/animSmoke.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/SEManager.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/prefabManagement.cs.meta",
+		"/C/Unity/Lab_2D Dig game/Assets/Editor/ImageEffects/AntialiasingEditor.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/SoundManager.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/toolBomb.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/item/itemManager.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/item/itemStock.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/generaterManager.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/item/itemBomb.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/toolHammer.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/toolDorill.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/hitPoint.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/jewelryScramble.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/MousePositionManager.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/gauge/toolGauge.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/toolActive.cs",
+		"/C/Users/友槻/Desktop/Steam.lnk",
+		"/C/Unity/HorrorGameProject/menu/horrorgame_menu/Assets/openMenu.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/isSmoke.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/toolPickaxe.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/isPickaxeUI.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/isSmork.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/isToolsUI.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/isDorillUI.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/PlayGame.cs",
+		"/C/Unity/Lab_2D Dig game/project.sublime-project",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/isHammerUI.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/findJewely.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/nextWave.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/isScore.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/isResult.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/isDestroy.cs",
+		"/C/Unity/Lab_2Daction/Assets/Script/EnemyController.cs",
+		"/C/Unity/Lab_2Daction/Assets/Script/BulletScript.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/CubeSEController.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/UIController.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/find_gameobject.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/UnityChanController.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/CubeController.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/CubeGenerator.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/BackgroundController.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/DurableValueController.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/HummerController.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/HummerController.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/GameScene.meta",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Sand_Generator.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/HanmerController.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/InstantiateStand.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/NewBehaviourScript.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/InstantiateSand.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/InstantiateSand.cs",
+		"/C/Unity/Study_MecanimTest/Assets/UnityChanController.cs",
+		"/C/Unity/Study_MecanimTest/project.sublime-project",
+		"/C/Unity/Stady_2d-shooting-game-master/project.sublime-project",
+		"/C/Unity/Project_horror game/Assets/script/Collider_test.cs",
+		"/C/Unity/sublime_text_in_unity.sublime-project",
+		"/C/Unity/Stady_2d-shooting-game-master/progect.sublime-project",
+		"/C/Unity/Project_horror game/horror.sublime-project",
+		"/C/Unity/Lab_door/Assets/suraidodoayoko.cs",
+		"/C/Unity/Stady_2d-shooting-game-master/2d-shooting-game-master.sln",
+		"/C/Unity/Project_horror game/Assets/EasyRoads3D Free/Release Notes.txt",
+		"/C/Unity/Project_horror game/Assets/EasyRoads3D Free/Editor/RoadObjectEditorScript.js",
+		"/C/Unity/Project_horror game/Assets/EasyRoads3D Free/_manual.html",
+		"/C/Unity/Project_horror game/Assets/EasyRoads3D Free/_readme.txt",
+		"/C/Unity/Lab_horror/Assets/download/RoadKit/MouseOrbit.js",
+		"/C/Unity/2d-shooting-game-master/Assets/Scripts/Spaceship.cs",
+		"/C/Unity/Lab_horror/Assets/Standard Assets/Vehicles/Car/Scripts/CarUserControl.cs",
+		"/C/Unity/Lab_horror/Assets/MasterCube/Script/MasterCube.cs",
+		"/C/Unity/Lab_horror/Assets/download/EasyRoads3D Free/_manual.html",
+		"/C/Unity/2d-shooting-game-master/2d-shooting.sublime-project",
+		"/C/Users/友槻/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/友槻/AppData/Roaming/Sublime Text 3/Packages/TrailingSpaces/trailing_spaces.sublime-settings",
+		"/C/Users/友槻/AppData/Roaming/Sublime Text 3/Packages/User/trailing_spaces.sublime-settings"
+	],
+	"find":
+	{
+		"height": 62.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"setting",
+			"def",
+			"objectEmpty",
+			"debug",
+			"array_position",
+			"setupRayPosition",
+			");\n",
+			"Random",
+			"true",
+			"        // switch(Prefab.gameObject.tag){\n        //     case \"Mud\":\n        //         Z_position = 0.0f;\n        //         break;\n        //     case \"Jewely\":\n        //         Z_position = 0.1f;\n        //         break;\n        //     case \"Sand\":\n        //         Z_position = 0.2f;\n        //         break;\n        //     case \"Stone_b\":\n        //         Z_position = 0.3f;\n        //         break;\n        //     case \"Stone\":\n        //         Z_position = 0.4f;\n        //         break;\n        // }",
+			"Input",
+			"){\n",
+			"\n\t\t",
+			">()."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Assets/Script/GenerateManager.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								675,
+								675
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"118,133": "Name should have prefix '_'. (Rule 'Fields').",
+								"159,173": "Name should have prefix '_'. (Rule 'Fields').",
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"220,235": "The private field 'lengthResources' is never assigned",
+								"259,264": "The private field 'paper' is never assigned",
+								"561,564": "Local variable 'obj' hides field 'GenerateManager.obj'",
+								"625,626": "Type cast is redundant",
+								"740,743": "Local variable 'obj' hides field 'GenerateManager.obj'",
+								"803,804": "Type cast is redundant"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 615.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Script/ItemGenerator.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								201,
+								201
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"304,311": "Parameter can be IComparable",
+								"322,324": "Convert to '?:' expression",
+								"347,351": "'this.' is redundant and can be removed safely.",
+								"385,386": "Type cast is redundant",
+								"429,433": "'this.' is redundant and can be removed safely.",
+								"466,467": "Type cast is redundant",
+								"501,505": "'this.' is redundant and can be removed safely.",
+								"573,577": "'this.' is redundant and can be removed safely."
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 328.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Script/Blueprint.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 748,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								738,
+								738
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"112,121": "Name should have prefix '_'. (Rule 'Fields').",
+								"145,153": "Name should have prefix '_'. (Rule 'Fields').",
+								"174,187": "Name should have prefix '_'. (Rule 'Fields').",
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"205,213": "Name should have prefix '_'. (Rule 'Fields').",
+								"231,240": "Name should have prefix '_'. (Rule 'Fields').",
+								"268,280": "'getResources' should start with an upper case letter. (Rule 'Methods')",
+								"381,385": "Redundant 'else' keyword",
+								"490,501": "'getResource' should start with an upper case letter. (Rule 'Methods')",
+								"559,575": "'getBasicPosition' should start with an upper case letter. (Rule 'Methods')",
+								"635,644": "'hasRandom' should start with an upper case letter. (Rule 'Methods')",
+								"699,709": "'hasJewelry' should start with an upper case letter. (Rule 'Methods')"
+							},
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 615.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/Script/StatumGenerator.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 623,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								600,
+								600
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"215,222": "Parameter can be IComparable",
+								"449,452": "Parameter 'obj' is never used",
+								"462,470": "Parameter 'position' is never used",
+								"498,513": "Method 'generateGeneral' has the same with 'generateRandom'",
+								"525,528": "Parameter 'obj' is never used",
+								"538,546": "Parameter 'position' is never used"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 246.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Script/Hitpoint.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								493,
+								493
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"1038,1054": "'isAnotherPenalty' should start with an upper case letter. (Rule 'Methods')",
+								"1244,1260": "'isPenaltyTrigger' should start with an upper case letter. (Rule 'Methods')",
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"193,196": "Name should have prefix '_'. (Rule 'Fields').",
+								"213,216": "Name should have prefix '_'. (Rule 'Fields').",
+								"602,614": "'attackTratum' should start with an upper case letter. (Rule 'Methods')",
+								"765,774": "'isPenalty' should start with an upper case letter. (Rule 'Methods')",
+								"890,900": "'getJewelry' should start with an upper case letter. (Rule 'Methods')"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 132.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 265.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Unity\\Lab_2D Dig game\\project.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 355.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
