@@ -3,40 +3,37 @@ using System.Collections;
 
 public class SEManager : MonoBehaviour {
 
-    public GameObject SEStone;
-    public GameObject SESand;
-    public GameObject SEJewelry;
-    public GameObject SEMoney;
+    public GameObject objectStoneSE;
+    public GameObject objectSandSE;
+    public GameObject objectJewelrySE;
+    public GameObject objectMoneySE;
 
-    private AudioSource playStone;
-    private AudioSource playSand;
-    private AudioSource playJewelry;
-    private AudioSource playMoney;
+    private SoundEffect stoneSE;
+    private SoundEffect sandSE;
+    private SoundEffect jewelrySE;
+    private SoundEffect moneySE;
 
 	// Use this for initialization
 	void Start () {
 
-        playSand = SESand.GetComponent<AudioSource>();
-        playStone = SEStone.GetComponent<AudioSource>();
-        playJewelry = SEJewelry.GetComponent<AudioSource>();
-        playMoney = SEMoney.GetComponent<AudioSource>();
-	}
-
-	// Update is called once per frame
-	void Update () {
-
+        stoneSE = objectStoneSE.GetComponent<SoundEffect>();
+        sandSE = objectSandSE.GetComponent<SoundEffect>();
+        jewelrySE = objectJewelrySE.GetComponent<SoundEffect>();
+        moneySE = objectMoneySE.GetComponent<SoundEffect>();
 	}
 
     public void setActive(string tag){
         switch(tag){
-            case "tagSand": playSand.PlayOneShot(playSand.clip);
+            case "tagSand": stoneSE.playSoundEffect();
                 break;
-            case "tagStone": playStone.PlayOneShot(playStone.clip);
+            case "tagStone": sandSE.playSoundEffect();
                 break;
-            case "tagJewelry": playJewelry.PlayOneShot(playJewelry.clip);
+            case "tagJewelry": jewelrySE.playSoundEffect();
                 break;
-            case "tagMoney": playMoney.PlayOneShot(playMoney.clip);
+            case "tagMoney": moneySE.playSoundEffect();
                 break;
         }
+
     }
+
 }

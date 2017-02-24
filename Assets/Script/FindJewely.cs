@@ -1,17 +1,16 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class findJewely : MonoBehaviour {
+public class FindJewely : MonoBehaviour {
 
     private Hitpoint isJewelry;
 
-    private SEManager setAudio;
+    private SoundEffect sound;
     private bool trigger;
 
 	// Use this for initialization
 	void Start () {
         isJewelry = gameObject.GetComponent<Hitpoint>();
-        setAudio = GameObject.Find("isSE").GetComponent<SEManager>();
+        sound = gameObject.GetComponent<SoundEffect>();
         trigger = true;
 	}
 
@@ -41,7 +40,7 @@ public class findJewely : MonoBehaviour {
         ){
             isJewelry.getJewelry();
             trigger = false;
-            setAudio.setActive(gameObject.tag);
+            sound.playSoundEffect();
         }
     }
 }

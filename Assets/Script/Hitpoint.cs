@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Hitpoint : MonoBehaviour {
 
+    public GameObject objectSE;
+
     private WaveManager end;
     private ScoreManager adder;
     private SEManager sound;
@@ -16,7 +18,7 @@ public class Hitpoint : MonoBehaviour {
 	void Start () {
         adder = GameObject.Find("Score").GetComponent<ScoreManager>();
         end = GameObject.Find("Script_StratumManager").GetComponent<WaveManager>();
-        sound = GameObject.Find("SE-Manager").GetComponent<SEManager>();
+        sound = objectSE.GetComponent<SEManager>();
 	}
 
 	// Update is called once per frame
@@ -30,6 +32,7 @@ public class Hitpoint : MonoBehaviour {
             adder.addScore(yen);
             Destroy(gameObject);
         }
+
     }
 
     public void isPenalty(){
