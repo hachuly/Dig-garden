@@ -1,5 +1,24 @@
-今後の展開
+オブジェクト指向プログラム
+RadioButtonUI
+	ラジオボタンの働きを行う。
+ButtonUI
+	ボタンとしての働きを行う。
 
+GenerateManager
+	パネルの生成を行う。
+Blueprint
+	アイテム生成に必要な情報や素材の情報を登録と読み込みをする。
+StatumGenerator : Blueprint
+	Blueprintで登録した情報を使い、地層パネルの生成を行う。
+ItemGenerator : Blueprint
+	Blueprintで登録した情報を使い、アイテムパネルの生成をおこなう。
+
+Tool
+	道具に必要な情報の登録と読み込みができる。
+Pickaxe : Tool
+	つるはしに必要な動きをToolを継承して製作されている。
+
+今後の展開
 ・音がならない原因の修正
 ・ハンマー、ドリル、ボムのプログラムをtoolを継承し作り直す。
 ・ドリルで用いられるゲージに関するプログラムの訂正（オブジェクト指向プログラミングに直す）
