@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class toolGauge : MonoBehaviour {
+public class Gauge : MonoBehaviour {
 
     public bool canActive;
 

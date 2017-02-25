@@ -4,8 +4,32 @@
 		"selected_items":
 		[
 			[
+				"o",
+				"objectMoneySE\tGameObject"
+			],
+			[
+				"st",
+				"stoneSE\tSoundEffect"
+			],
+			[
+				"sou",
+				"SoundEffect\tSoundEffect"
+			],
+			[
 				"ob",
 				"objectSE\tGameObject"
+			],
+			[
+				"Ve",
+				"Vector3\tVector3"
+			],
+			[
+				"so",
+				"sound\tAudioSource"
+			],
+			[
+				"soun",
+				"sound\tSoundEffect"
 			],
 			[
 				"one",
@@ -22,14 +46,6 @@
 			[
 				"get",
 				"GetComponent<T>()\tT"
-			],
-			[
-				"o",
-				"objectGauge\tGameObject"
-			],
-			[
-				"Ve",
-				"Vector2\tVector2"
 			],
 			[
 				"u",
@@ -97,10 +113,6 @@
 			],
 			[
 				"sti",
-				"string\tstring"
-			],
-			[
-				"st",
 				"string\tstring"
 			],
 			[
@@ -248,10 +260,6 @@
 				"lhs\tint"
 			],
 			[
-				"sou",
-				"soundActive\tsoundActive"
-			],
-			[
 				"set",
 				"settingArray(GameObject[] obj)\tvoid"
 			],
@@ -298,10 +306,6 @@
 			[
 				"ra",
 				"Ray()\tRay()"
-			],
-			[
-				"soun",
-				"soundStone\tGameObject"
 			],
 			[
 				"s",
@@ -447,25 +451,51 @@
 			"file": "Assets/Script/Controller_tools/Tool.cs",
 			"settings":
 			{
-				"buffer_size": 724,
+				"buffer_size": 1535,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/Script/SoundEffect.cs",
+			"file": "Assets/Script/Controller_tools/ToolDorill.cs",
 			"settings":
 			{
-				"buffer_size": 315,
+				"buffer_size": 3377,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/Script/FindJewely.cs",
+			"file": "Assets/Script/SEManager.cs",
 			"settings":
 			{
-				"buffer_size": 1592,
+				"buffer_size": 1070,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/Controller_UI/ButtonUI.cs",
+			"settings":
+			{
+				"buffer_size": 827,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/StatumGenerator.cs",
+			"settings":
+			{
+				"buffer_size": 1257,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/Hitpoint.cs",
+			"settings":
+			{
+				"buffer_size": 1390,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Unix"
 			}
@@ -474,7 +504,34 @@
 			"file": "Assets/Script/Controller_tools/ToolPickaxe.cs",
 			"settings":
 			{
-				"buffer_size": 857,
+				"buffer_size": 94,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/Controller_tools/ToolHammer.cs",
+			"settings":
+			{
+				"buffer_size": 2543,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/SoundEffect.cs",
+			"settings":
+			{
+				"buffer_size": 289,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/FindJewely.cs",
+			"settings":
+			{
+				"buffer_size": 1566,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Unix"
 			}
@@ -564,6 +621,7 @@
 	],
 	"file_history":
 	[
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/gauge/toolGauge.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/SEManager.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/SmokeAnimation.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/Hitpoint.cs",
@@ -605,7 +663,6 @@
 		"/C/Unity/Lab_2D Dig game/Assets/Script/hitPoint.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/jewelryScramble.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/MousePositionManager.cs",
-		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/gauge/toolGauge.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/toolActive.cs",
 		"/C/Users/友槻/Desktop/Steam.lnk",
 		"/C/Unity/HorrorGameProject/menu/horrorgame_menu/Assets/openMenu.cs",
@@ -667,7 +724,7 @@
 	],
 	"find":
 	{
-		"height": 49.0
+		"height": 62.0
 	},
 	"find_in_files":
 	{
@@ -681,6 +738,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"setAudio",
+			"sound",
 			";\n",
 			"effect",
 			"setting",
@@ -714,7 +773,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -723,15 +782,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 724,
+						"buffer_size": 1535,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								269,
-								269
+								32,
+								32
 							]
 						],
 						"settings":
@@ -739,81 +798,12 @@
 							"is_init_dirty_state": false,
 							"oops":
 							{
-								"255,266": "'SoundEffect' is not a known identifier"
+								"311,316": "'Gauge' is not a known identifier",
+								"515,520": "'Gauge' is not a known identifier",
+								"523,524": "Cannot convert from ? to [UnknownType Gauge]"
 							},
 							"origin_encoding": "ASCII",
 							"syntax": "Packages/C#/C#.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 164.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Assets/Script/SoundEffect.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 315,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								262,
-								262
-							]
-						],
-						"settings":
-						{
-							"oops":
-							{
-								"19,24": "Using directive is not used by code and can be removed safely.",
-								"247,262": "'playSoundEffect' should start with an upper case letter. (Rule 'Methods')"
-							},
-							"syntax": "Packages/C#/C#.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Assets/Script/FindJewely.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1592,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								19,
-								19
-							]
-						],
-						"settings":
-						{
-							"oops":
-							{
-								"491,501": "'rayJewelry' should start with an upper case letter. (Rule 'Methods')",
-								"517,522": "Convert to constant",
-								"541,544": "Use 'var' keyword",
-								"607,614": "Use 'var' keyword",
-								"659,671": "Use 'var' keyword"
-							},
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -823,20 +813,202 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "Assets/Script/Controller_tools/ToolPickaxe.cs",
+					"buffer": 1,
+					"file": "Assets/Script/Controller_tools/ToolDorill.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 857,
+						"buffer_size": 3377,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								848,
-								848
+								823,
+								823
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"239,244": "'Gauge' is not a known identifier",
+								"3229,3238": "Cannot convert from ? to System.Boolean",
+								"3306,3319": "'Gauge' does not contain a definition for 'decreaseMeter'",
+								"3321,3322": "'Gauge' does not contain a definition for 'decreaseMeter'",
+								"818,823": "'Gauge' is not a known identifier",
+								"826,827": "Cannot convert from ? to [UnknownType Gauge]"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Script/SEManager.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								421,
+								421
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"110,123": "Name should have prefix '_'. (Rule 'Fields').",
+								"147,159": "Name should have prefix '_'. (Rule 'Fields').",
+								"183,198": "Name should have prefix '_'. (Rule 'Fields').",
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"222,235": "Name should have prefix '_'. (Rule 'Fields').",
+								"688,697": "'setActive' should start with an upper case letter. (Rule 'Methods')",
+								"705,708": "Parameter can be IComparable"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/Script/Controller_UI/ButtonUI.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 827,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Script/StatumGenerator.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Script/Hitpoint.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								950,
+								950
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"1051,1067": "'isAnotherPenalty' should start with an upper case letter. (Rule 'Methods')",
+								"109,117": "Name should have prefix '_'. (Rule 'Fields').",
+								"1257,1273": "'isPenaltyTrigger' should start with an upper case letter. (Rule 'Methods')",
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"226,229": "Name should have prefix '_'. (Rule 'Fields').",
+								"246,249": "Name should have prefix '_'. (Rule 'Fields').",
+								"614,626": "'attackTratum' should start with an upper case letter. (Rule 'Methods')",
+								"778,787": "'isPenalty' should start with an upper case letter. (Rule 'Methods')",
+								"903,913": "'getJewelry' should start with an upper case letter. (Rule 'Methods')"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1817.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Script/Controller_tools/ToolPickaxe.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 94,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
 							]
 						],
 						"settings":
@@ -844,22 +1016,131 @@
 							"is_init_dirty_state": false,
 							"oops":
 							{
-								"281,289": "'loodTool' should start with an upper case letter. (Rule 'Methods')",
-								"305,310": "Convert to constant"
+								"0,5": "Using directive is not used by code and can be removed safely."
 							},
 							"syntax": "Packages/C#/C#.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 538.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
+					"file": "Assets/Script/Controller_tools/ToolHammer.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1951,
+								1951
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"1946,1951": "'Gauge' is not a known identifier",
+								"1954,1955": "Invocation error: MethodConstraintsNotSatisfied",
+								"1955,1968": "'?' does not contain a definition for 'increaseMeter'",
+								"1976,1977": "'?' does not contain a definition for 'increaseMeter'"
+							},
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2016.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Assets/Script/SoundEffect.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"oops":
+							{
+								"221,236": "'playSoundEffect' should start with an upper case letter. (Rule 'Methods')"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Assets/Script/FindJewely.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1546,
+								1546
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"oops":
+							{
+								"476,486": "'rayJewelry' should start with an upper case letter. (Rule 'Methods')",
+								"502,507": "Convert to constant",
+								"526,529": "Use 'var' keyword",
+								"592,599": "Use 'var' keyword",
+								"644,656": "Use 'var' keyword"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "Assets/Script/SmokeAnimation.cs",
 					"semi_transient": false,
 					"settings":
@@ -877,17 +1158,18 @@
 						],
 						"settings":
 						{
+							"is_init_dirty_state": false,
 							"syntax": "Packages/C#/C#.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 11,
 					"file": "Assets/Script/OnAwakeAnimation.cs",
 					"semi_transient": false,
 					"settings":
@@ -905,6 +1187,7 @@
 						],
 						"settings":
 						{
+							"is_init_dirty_state": false,
 							"oops":
 							{
 								"145,158": "'playAnimation' should start with an upper case letter. (Rule 'Methods')",
@@ -917,7 +1200,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]

@@ -9,7 +9,7 @@ public class ToolDorill : MonoBehaviour {
     private SEManager setAudio;
     private Hitpoint def;
     private Hitpoint penalty;
-    private toolGauge stateGauge;
+    private Gauge stateGauge;
 
     private Vector2 ray_position;
     private Ray ray;
@@ -31,7 +31,7 @@ public class ToolDorill : MonoBehaviour {
 
         setAudio = GameObject.Find("SE-Manager").GetComponent<SEManager>();
         effect = GameObject.Find("Generator_Smoke").GetComponent<SmokeAnimation>();
-        stateGauge = objectGauge.GetComponent<toolGauge>();
+        stateGauge = objectGauge.GetComponent<Gauge>();
 
         setupRayPosition();
 

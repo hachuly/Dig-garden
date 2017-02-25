@@ -65,7 +65,7 @@ public class ToolHammer : MonoBehaviour {
             }
 
         }
-        objectGauge.GetComponent<toolGauge>().increaseMeter(0.005f);
+        objectGauge.GetComponent<Gauge>().increaseMeter(0.005f);
 
     }
 
