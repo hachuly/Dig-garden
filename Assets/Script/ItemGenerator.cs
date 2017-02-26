@@ -10,11 +10,6 @@ public class ItemGenerator : Blueprint {
         startGenerater(hasJewelry());
 	}
 
-	// Update is called once per frame
-	void Update () {
-
-	}
-
     private void startGenerater(bool trigger){
         if(trigger){
             this.obj = Instantiate(getResources()) as GameObject;

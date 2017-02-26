@@ -1,34 +1,41 @@
 ﻿using UnityEngine;
 
-public class Gauge : MonoBehaviour {
+public class Energy : MonoBehaviour {
 
-    public bool canActive;
+    [SerializeField]
+    float fuel_consumption;
 
-    private float maxGauge;
-    private float minGauge;
+    bool state;
+
+    float max;
+    float min;
 
     void Start(){
-        canActive = true;
-        maxGauge = gameObject.transform.localScale.x;
-        minGauge = 0f;
+        state = true;
+        max = gameObject.transform.localScale.x;
+        min = 0f;
+    }
+
+    public bool getState(){
+        return state;
     }
 
     public void increaseMeter(float energy){
 
-        if(!canActive){
+        if(!state){
             gameObject.transform.localScale = new Vector3(
                 gameObject.transform.localScale.x + energy,
                 gameObject.transform.localScale.y,
                 gameObject.transform.localScale.z
             );
 
-            if(maxGauge < gameObject.transform.localScale.x){
+            if(max < gameObject.transform.localScale.x){
                 gameObject.transform.localScale = new Vector3(
-                    maxGauge,
+                    max,
                     gameObject.transform.localScale.y,
                     gameObject.transform.localScale.z
                 );
-                canActive = true;
+                state = true;
 
             }
 
@@ -38,20 +45,20 @@ public class Gauge : MonoBehaviour {
 
     public void decreaseMeter(){
 
-        if(canActive){
+        if(state){
             gameObject.transform.localScale = new Vector3(
-                gameObject.transform.localScale.x - 0.03f,
+                gameObject.transform.localScale.x - fuel_consumption,
                 gameObject.transform.localScale.y,
                 gameObject.transform.localScale.z
             );
 
-            if(minGauge > gameObject.transform.localScale.x){
+            if(min > gameObject.transform.localScale.x){
                 gameObject.transform.localScale = new Vector3(
-                    minGauge,
+                    min,
                     gameObject.transform.localScale.y,
                     gameObject.transform.localScale.z
                 );
-                canActive = false;
+                state = false;
             }
 
         }

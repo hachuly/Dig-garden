@@ -9,13 +9,9 @@ public class GenerateManager : MonoBehaviour {
     private GameObject obj;
     private int lengthResources;
     private Blueprint paper;
-    private RelateSetting parent;
-
 
 	// Use this for initialization
 	void Start () {
-        parent = gameObject.GetComponent<RelateSetting>();
-
         startGenerate();
 
 	}

@@ -2,132 +2,87 @@
 using System.Collections;
 using System;
 
-public class ToolDorill : MonoBehaviour {
+public class ToolDorill : Tool {
+    [SerializeField]
+    float recastcount;
+    [SerializeField]
+    private int damage_center, damage_plus, damage_cross;
+    [SerializeField]
+    Vector2[] position;
 
-    public GameObject objectGauge;
+    bool state, click;
+    float framerate;
 
-    private SEManager setAudio;
-    private Hitpoint def;
-    private Hitpoint penalty;
-    private Gauge stateGauge;
-
-    private Vector2 ray_position;
-    private Ray ray;
-    private RaycastHit2D hit;
-
-    private float[,] array_position;
-
-    private bool triggerFrame;
-    private bool stateMouse;
-    private int frameRate;
-    private int str1,str2,str3;
-    private int layer;
-
-
-    private SmokeAnimation effect;
-
-	// Use this for initialization
-	void Start () {
-
-        setAudio = GameObject.Find("SE-Manager").GetComponent<SEManager>();
-        effect = GameObject.Find("Generator_Smoke").GetComponent<SmokeAnimation>();
-        stateGauge = objectGauge.GetComponent<Gauge>();
-
-        setupRayPosition();
-
-
-        str1 = 10;
-        str2 = 3;
-        str3 = 1;
-
-        triggerFrame = true;
-        stateMouse = false;
-
-	}
+    void Start(){
+        state = true;
+    }
 
 	// Update is called once per frame
 	void Update () {
-        if(stateMouse){
-            isFrame(triggerFrame);
+        if(click){
+            canDiging(this.state);
 
         }
 
 	}
 
-    public void loadDorill(){
-        layer = 1 << 8;
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        ray_position = (Vector2)ray.origin;
-
-        for(int i = 0; i < array_position.Length/2; i++){
-            try{
-                hit = Physics2D.Raycast(new Vector2(ray_position.x + array_position[i,0], ray_position.y + array_position[i,1]), Vector2.zero, 1, layer);
-                    if(5 <= i){
-                        playAction(hit, str3);
-                    }else if(1 <= i){
-                        playAction(hit, str2);
-                    }else{
-                        playAction(hit, str1);
-                    }
-
-                effect.playAnimation(hit.collider.gameObject.transform.position);
-
-            }catch(NullReferenceException error){}
-
-        }
+    void OnMouseUp(){
+        click = false;
 
     }
 
-    private void playAction(RaycastHit2D ray, int str){
-        if(ray.collider.gameObject.tag == "tagSand"
-            || ray.collider.gameObject.tag == "tagStone"){
-            setAudio.setActive(ray.collider.gameObject.tag);
-            def = ray.collider.gameObject.GetComponent<Hitpoint>();
-            def.attackTratum(str);
-        }else{
-            if(ray.collider.gameObject.tag == "tagJewelry"){
-                setAudio.setActive(ray.collider.gameObject.tag);
-                penalty = ray.collider.gameObject.GetComponent<Hitpoint>();
-                penalty.isPenaltyTrigger();
+    void OnMouseDown(){
+        click = true;
+
+    }
+
+    void loadTool(){
+        int layer = 1 << 8;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Vector2 origin = (Vector2)ray.origin;
+
+        tryRayCast(layer, origin);
+
+    }
+
+    void tryRayCast(int layer, Vector2 ray){
+        RaycastHit2D hit;
+        GameObject obj;
+
+        for(int i = 0; i < this.position.Length; i++){
+            try{
+                hit = Physics2D.Raycast(new Vector2(ray.x + this.position[i].x, ray.y + this.position[i].y), new Vector2(0f,0f), 1, layer);
+                obj = hit.collider.gameObject;
+
+                damageDeclaration(obj, selectDamagePoint(i));
+                playEffect(obj);
+
+            }catch(NullReferenceException error){
+                Debug.Log(error);
             }
 
         }
 
     }
 
-    private void setupRayPosition(){
-        array_position = new float[,]{
-            {+0.00f,+0.00f},//center
-            {+0.00f,+0.03f},//top
-            {+0.00f,-0.03f},//done
-            {+0.03f,+0.00f},//right
-            {-0.03f,+0.00f},//left
-
-            {+0.03f,+0.03f},
-            {+0.03f,-0.03f},
-            {-0.03f,+0.03f},
-            {-0.03f,-0.03f},
-
-        };
+    int selectDamagePoint(int num){
+        if(5 <= num){
+            return damage_cross;
+        }else if(1 <= num){
+            return damage_plus;
+        }else{
+            return damage_center;
+        }return 0;
 
     }
 
-    void OnMouseDown(){
-        stateMouse = true;
-    }
-
-    void OnMouseUp(){
-        stateMouse = false;
-
-    }
-
-    public void isFrame(bool trigger){
-        if(trigger){
-            if(frameRate + 10 < Time.frameCount){
-                frameRate = Time.frameCount;
-                if(stateGauge.canActive){
-                    loadDorill();
-                    stateGauge.decreaseMeter();
+    void canDiging(bool state){
+        if(state){
+            if(framerate + 10 < Time.frameCount){
+                framerate = Time.frameCount;
+                if(checkGaugeState()){
+                    loadTool();
+                    sumEnergy();
                 }
 
             }

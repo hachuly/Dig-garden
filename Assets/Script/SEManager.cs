@@ -15,22 +15,27 @@ public class SEManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
         stoneSE = objectStoneSE.GetComponent<SoundEffect>();
         sandSE = objectSandSE.GetComponent<SoundEffect>();
         jewelrySE = objectJewelrySE.GetComponent<SoundEffect>();
         moneySE = objectMoneySE.GetComponent<SoundEffect>();
+
 	}
 
     public void setActive(string tag){
+
         switch(tag){
-            case "tagSand": stoneSE.playSoundEffect();
+            case "tagStone": Debug.Log(tag);
+                stoneSE.playSoundEffect();
                 break;
-            case "tagStone": sandSE.playSoundEffect();
+            case "tagSand": Debug.Log(tag);
+                sandSE.playSoundEffect();
                 break;
-            case "tagJewelry": jewelrySE.playSoundEffect();
+            case "tagJewelry": Debug.Log(tag);
+                jewelrySE.playSoundEffect();
                 break;
-            case "tagMoney": moneySE.playSoundEffect();
+            case "tagMoney": Debug.Log(tag);
+                moneySE.playSoundEffect();
                 break;
         }
 

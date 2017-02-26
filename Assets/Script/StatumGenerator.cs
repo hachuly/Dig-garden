@@ -28,6 +28,8 @@ public class StatumGenerator : Blueprint {
         if(Random.Range(0, 2) == 1){
             this.obj = Instantiate(getResource()) as GameObject;
             this.obj.transform.position = findPosition(getBasicPosition(), lhs, rhs);
+            this.obj.transform.parent = gameObject.transform;
+
         }
 
     }
@@ -35,6 +37,8 @@ public class StatumGenerator : Blueprint {
     private void generateGeneral(float lhs, float rhs){
         this.obj = Instantiate(getResource()) as GameObject;
         this.obj.transform.position = findPosition(getBasicPosition(), lhs, rhs);
+        this.obj.transform.parent = gameObject.transform;
+
     }
 
     private Vector3 findPosition(Vector3 position, float lhs, float rhs){

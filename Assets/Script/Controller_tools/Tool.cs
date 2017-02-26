@@ -3,63 +3,89 @@ using System;
 
 public class Tool : MonoBehaviour {
 
-    public GameObject objectSE;
-    public GameObject objectGauge;
-    public GameObject objectSmokeAnimation;
+	[SerializeField]
+    protected GameObject objectSE;
+	[SerializeField]
+    protected GameObject objectGauge;
+	[SerializeField]
+    protected GameObject objectSmokeAnimation;
 
-    public int damage;
-    public float energy;
+	[SerializeField]
+	int damage;
+	[SerializeField]
+	float energy;
 
-    private OnAwakeAnimation effect;
-    private Hitpoint penalty;
-    private Gauge tank;
-    private SEManager sound;
+	protected OnAwakeAnimation effect;
+	protected Hitpoint penalty;
+	protected Energy tank;
+	protected SEManager sound;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
+        this.sound = objectSE.GetComponent<SEManager>();
+        this.effect = objectSmokeAnimation.GetComponent<OnAwakeAnimation>();
+        this.tank = objectGauge.GetComponent<Energy>();
 
-        effect = objectSmokeAnimation.GetComponent<OnAwakeAnimation>();
-        tank = objectGauge.GetComponent<Gauge>();
-        sound = objectSE.GetComponent<SEManager>();
+    }
 
-	}
+    protected void loodTool(){
+        int layer = 1 << 8;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        tryRaycast(layer, ray);
 
-	protected void loodTool(){
-		int layer = 1 << 8;
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		tryRaycast(layer, ray);
+    }
 
-	}
+    private void tryRaycast(int layer, Ray ray){
+        RaycastHit2D hit;
+        GameObject obj;
 
-	private void tryRaycast(int layer, Ray ray){
-		RaycastHit2D hit;
-		GameObject obj;
+        try{
+            hit = Physics2D.Raycast((Vector2)ray.origin, Vector2.zero, 1, layer);
+            obj = hit.collider.gameObject;
+            damageDeclaration(obj, getDamagePoint());
+            playEffect(obj);
+            addEnergy();
+        }catch(NullReferenceException error){
+            Debug.Log("tool : " + error);
+        }
 
-		try{
-			hit = Physics2D.Raycast((Vector2)ray.origin, Vector2.zero, 1, layer);
-			obj = hit.collider.gameObject;
-			damageDeclaration(obj);
-		}catch(NullReferenceException error){
-			Debug.Log(error);
-		}
+    }
 
-	}
-
-    protected void damageDeclaration(GameObject obj){
+    protected void damageDeclaration(GameObject obj, int damage){
+        string objTag = obj.tag;
         penalty = obj.GetComponent<Hitpoint>();
-        playEffect(obj);
-        // tank.increaseMeter(energy);
-        if(obj.tag == "tagSand" || obj.tag == "tagStone"){
+
+        if(objTag == "tagSand" || objTag == "tagStone"){
             penalty.attackTratum(damage);
-        }else if(obj.tag == "tagJewelry"){
+        }else if(objTag == "tagJewelry"){
             penalty.isPenaltyTrigger();
         }
 
     }
 
     protected void playEffect(GameObject obj){
-        effect.playAnimation(obj.transform.position);
         sound.setActive(obj.tag);
+        effect.playAnimation(obj.transform.position);
+
+    }
+
+    protected int getDamagePoint(){
+        return this.damage;
+
+    }
+
+    protected bool checkGaugeState(){
+        return tank.getState();
+
+    }
+
+    protected void addEnergy(){
+        tank.increaseMeter(this.energy);
+
+    }
+
+    protected void sumEnergy(){
+        tank.decreaseMeter();
 
     }
 

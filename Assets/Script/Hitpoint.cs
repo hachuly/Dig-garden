@@ -5,7 +5,7 @@ public class Hitpoint : MonoBehaviour {
 
     public GameObject objectSE;
 
-    private WaveManager end;
+    private WaveManager game;
     private ScoreManager adder;
     private SEManager sound;
 
@@ -17,13 +17,8 @@ public class Hitpoint : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         adder = GameObject.Find("Score").GetComponent<ScoreManager>();
-        end = GameObject.Find("Script_StratumManager").GetComponent<WaveManager>();
+        // end = GameObject.Find("Script_StratumManager").GetComponent<WaveManager>();
         sound = objectSE.GetComponent<SEManager>();
-	}
-
-	// Update is called once per frame
-	void Update () {
-
 	}
 
     public void attackTratum(int str){
@@ -39,7 +34,7 @@ public class Hitpoint : MonoBehaviour {
         def--;
         yen /= 2;
         if(def < 0){
-            end.reset();
+            // end.reset();
         }
 
     }
@@ -47,7 +42,7 @@ public class Hitpoint : MonoBehaviour {
         sound.setActive("tagMoney");
         adder.addScore(yen);
         trigger = true;
-        end.reset();
+        // end.reset();
     }
 
     public void isAnotherPenalty(){
@@ -56,7 +51,7 @@ public class Hitpoint : MonoBehaviour {
         adder.getPenalty(yen.ToString());
         if(def < 0){
             Destroy(gameObject);
-            end.reset();
+            // end.reset();
         }
     }
 
