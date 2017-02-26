@@ -20,11 +20,6 @@ public class ScoreManager : MonoBehaviour {
         g_yen = 0;
 	}
 
-	// Update is called once per frame
-	void Update () {
-
-	}
-
     public void addScore(int i){
         c_yen += i;
         if(999 < c_yen){
