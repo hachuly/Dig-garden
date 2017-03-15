@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
-public class ScoreManager : MonoBehaviour {
+public class ScoreCanvas : MonoBehaviour {
 
-    private GameObject yen;
+    GameObject yen;
 
-    private int c_yen;
-    private int k_yen;
-    private int m_yen;
-    private int g_yen;
+    int c_yen;
+    int k_yen;
+    int m_yen;
+    int g_yen;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +17,7 @@ public class ScoreManager : MonoBehaviour {
         k_yen = 0;
         m_yen = 0;
         g_yen = 0;
+
 	}
 
     public void addScore(int i){
@@ -26,18 +26,7 @@ public class ScoreManager : MonoBehaviour {
             k_yen++;
             c_yen = 0;
         }showScore();
-    }
 
-    private void showScore(){
-        yen.GetComponent<Text>().text = setYen(g_yen) + ","+ setYen(m_yen) +","+ setYen(k_yen) +","+ setYen(c_yen);
-    }
-
-    private string setYen(int i){
-        if(i < 10){
-            return "00" + i;
-        }else if(i < 100){
-            return "0" + i;
-        }return i.ToString();
     }
 
     public void getPenalty(string i){
@@ -57,6 +46,21 @@ public class ScoreManager : MonoBehaviour {
 
     public string inYen(){
         return  setYen(g_yen) + ","+ setYen(m_yen) +","+ setYen(k_yen) +","+ setYen(c_yen)+"yen";
+
+    }
+
+    void showScore(){
+        yen.GetComponent<Text>().text = setYen(g_yen) + ","+ setYen(m_yen) +","+ setYen(k_yen) +","+ setYen(c_yen);
+
+    }
+
+    string setYen(int i){
+        if(i < 10){
+            return "00" + i;
+        }else if(i < 100){
+            return "0" + i;
+        }return i.ToString();
+
     }
 
 }

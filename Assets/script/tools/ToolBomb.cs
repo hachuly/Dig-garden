@@ -6,23 +6,20 @@ public class ToolBomb : MonoBehaviour {
 
     public GameObject objectItemManager;
 
-    private SEManager setAudio;
-    private Hitpoint def;
-    private Hitpoint penalty;
-    private ItemManager stateItems;
+    SEManager setAudio;
+    Hitpoint def;
+    Hitpoint penalty;
+    ItemManager stateItems;
 
-    private float[] array_y_position;
-    private float[] array_x_position;
+    float[] array_y_position;
+    float[] array_x_position;
 
-    private int str;
-    private int layer;
-    private RaycastHit2D hit;
-
-    private SmokeAnimation effect;
+    int str;
+    int layer;
+    RaycastHit2D hit;
 
 	// Use this for initialization
 	void Start () {
-        effect = GameObject.Find("Generator-Smoke").GetComponent<SmokeAnimation>();
         setAudio = GameObject.Find("SE-Manager").GetComponent<SEManager>();
         setupRayPosition();
         stateItems = objectItemManager.GetComponent<ItemManager>();
@@ -52,7 +49,7 @@ public class ToolBomb : MonoBehaviour {
                 try{
                     hit = Physics2D.Raycast(new Vector2(array_x_position[x],array_y_position[y]), Vector2.zero, 1, layer);
                     playAction(hit);
-                    effect.playAnimation(hit.collider.gameObject.transform.position);
+                    // effect.playAnimation(hit.collider.gameObject.transform.position);
                 }catch(NullReferenceException error){}
             }
         }

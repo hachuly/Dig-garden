@@ -2,23 +2,30 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-public class TimeManager : MonoBehaviour {
+public class TimerCanvas : MonoBehaviour {
 
-    private ResultScore show;
+    [SerializeField]
+    GameObject result;
+    [SerializeField]
+    GameObject timer;
+    [SerializeField]
+    GameObject score;
 
-    private GameObject result;
-    private GameObject timer;
-    private int d_ff;
-    private int setTime;
-    public int seconds;
-    public int minutes;
-    private bool stop;
+    ResultScore show;
+
+    [SerializeField]
+    int seconds;
+    [SerializeField]
+    int minutes;
+
+    int d_ff;
+    int setTime;
+    bool stop;
 
 	// Use this for initialization
 	void Start () {
-        show = GameObject.Find("Text-score").GetComponent<ResultScore>();
-        result = GameObject.Find("Result");
-        result.SetActive(false);
+        show = score.GetComponent<ResultScore>();
+
         timer = gameObject;
         d_ff = 0;
         setTime = 1;
@@ -28,6 +35,7 @@ public class TimeManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Clock(stop);
+
 	}
 
     public void Clock(bool trigger){
@@ -47,7 +55,9 @@ public class TimeManager : MonoBehaviour {
             stop = false;
             result.SetActive(true);
             show.getScore();
+
         }
+
     }
 
     private string setSeconds(int i){
@@ -60,8 +70,8 @@ public class TimeManager : MonoBehaviour {
 
         if(seconds < 10){
             return "0" + seconds.ToString();
-        }
-        return seconds.ToString();
+        }return seconds.ToString();
+
     }
 
     private string setMinutes(){
@@ -71,8 +81,7 @@ public class TimeManager : MonoBehaviour {
 
         if(minutes < 10){
             return "0" + minutes.ToString();
-        }
-        return minutes.ToString();
+        }return minutes.ToString();
 
     }
 

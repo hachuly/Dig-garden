@@ -3,29 +3,37 @@ using System.Collections;
 
 public class Hitpoint : MonoBehaviour {
 
-    public GameObject objectSE;
+    [SerializeField]
+    GameObject objectSE;
+    [SerializeField]
+    GameObject objectScore;
+    [SerializeField]
+    GameObject objectEnd;
 
-    private WaveManager game;
-    private ScoreManager adder;
-    private SEManager sound;
+    WaveManager game;
+    ScoreCanvas score;
+    SEManager sound;
 
-    public int def;
-    public int yen;
+    [SerializeField]
+    int def;
+    [SerializeField]
+    int yen;
 
-    private bool trigger;
+    bool trigger;
 
 	// Use this for initialization
 	void Start () {
-        adder = GameObject.Find("Score").GetComponent<ScoreManager>();
         // end = GameObject.Find("Script_StratumManager").GetComponent<WaveManager>();
+        score = objectScore.GetComponent<ScoreCanvas>();
         sound = objectSE.GetComponent<SEManager>();
+
 	}
 
     public void attackTratum(int str){
         def -= str;
         if(def < 0){
-            adder.addScore(yen);
-            Destroy(gameObject);
+            score.addScore(yen);
+
         }
 
     }
@@ -38,9 +46,11 @@ public class Hitpoint : MonoBehaviour {
         }
 
     }
+
     public void getJewelry(){
+
         sound.setActive("tagMoney");
-        adder.addScore(yen);
+        score.addScore(yen);
         trigger = true;
         // end.reset();
     }
@@ -48,11 +58,12 @@ public class Hitpoint : MonoBehaviour {
     public void isAnotherPenalty(){
         def--;
         yen /=2;
-        adder.getPenalty(yen.ToString());
+        score.getPenalty(yen.ToString());
         if(def < 0){
             Destroy(gameObject);
             // end.reset();
         }
+
     }
 
     public void isPenaltyTrigger(){
